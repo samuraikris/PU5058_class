@@ -26,3 +26,10 @@ ls()
 ?list.files
 list.dirs()
 list.files(include.dirs = TRUE)
+
+
+
+install.packages("usethis")
+usethis::create_github_token()
+gitcreds::gitcreds_set()
+3
