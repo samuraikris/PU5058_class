@@ -20,7 +20,7 @@ b
 # r = 0.1 m 
 r <- 0.1
 A <- r^2* pi
-A
+Aff
 weight <- c(69, 62, 57, 59, 59, 64, 56, 66, 67, 66)
 mean(weight)
 var(weight)
@@ -42,3 +42,45 @@ some_child <- height[c(2, 3, 9, 10)]
 some_child
 shorter_child <- height[height <= 99]
 shorter_child
+#bmi calculation (kg/m^2)
+bmi <- (weight/(height/100)^2)
+bmi
+
+
+?seq
+
+
+seq1 <- seq(0, 1, by= 0.1)
+seq1
+seq2 <- seq(10, 1, by= -0.5)
+seq2
+?rev
+seq2 <-rev(seq(1, 10, by = 0.5)) 
+seq2
+
+
+n.vector <- rep(c(1, 2, 3), times = 3)
+n.vector
+n2.vector <- rep(c("a", "c", "e", "g"), each = 3)
+n2.vector
+
+height_sorted <- sort(height)
+height_sorted
+reverse_sorted_h <- rev(height_sorted)
+reverse_sorted_h
+
+
+child_names  <- c("Alfred", "Barbara", "James", "Jane", "John", "Judy", "Louise", "Mary", "Ronald", "William")
+height_ord <- order(height)
+height_ord
+names_sort <- child_names[height_ord]
+names_sort
+
+mydata <- c(2, 4, 1, 6, 8, 5, NA, 4, 7)
+mean(mydata)
+?mean
+
+mean(mydata, trim = 0, na.rm = TRUE)
+rm(seq1)
+who()
+ls()
